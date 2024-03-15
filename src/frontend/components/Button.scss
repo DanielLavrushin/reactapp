@@ -1,0 +1,15 @@
+.button {
+  background: white;
+  color: purple;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  border: 1px solid purple;
+  border-radius: 50px 50px;
+  &:hover {
+    background: purple;
+    color: white;
+    cursor: pointer;
+  }
+}

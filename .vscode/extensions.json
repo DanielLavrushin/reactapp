@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "msjsdiag.vscode-react-native",
+    "ms-vscode.vscode-typescript-next",
+    "infeng.vscode-react-typescript",
+    "tanxestudio.tanxe-browser-live-reload",
+    "esbenp.prettier-vscode"
+  ]
+}
