@@ -1,6 +1,6 @@
 {
   "explorer.fileNesting.patterns": {
-    "*.tsx": "${capture}.ts,${capture}.scss,${capture}.scss.d.ts"
+    "*.tsx": "${capture}.*"
   },
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": true,

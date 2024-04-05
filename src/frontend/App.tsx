@@ -1,18 +1,35 @@
 import React from "react";
-import Button from "./components/Button"
+import CommentsForm from "./components/CommentsForm"
+import CommentsList from "./components/CommentsList"
+import Comment from "./models/Comment"
+import "./App.scss";
 
-function App() {
 
-  let clickButton = () => {
-    console.log('from app', this);
+let comments = Array<Comment>();
+
+type AppProps = {};
+type AppState = {
+  comments: Array<Comment>;
+};
+
+class App extends React.Component<AppProps, AppState> {
+
+
+  state: AppState = { comments: comments };
+
+  addComment = (comment: Comment) => {
+    this.setState((state) => ({ comments: [...state.comments, comment] }));
   };
 
-  return (
-    <>
-      <h1>React APP</h1>
-      <Button text={"click the button"} onClick={clickButton} />
-    </>
-  );
+  render() {
+    return (
+      <div className="app">
+        <div>React APP</div>
+        <CommentsForm onSubmit={this.addComment} />
+        <CommentsList comments={this.state.comments} />
+      </div>
+    );
+  }
 }
 
 export default App;

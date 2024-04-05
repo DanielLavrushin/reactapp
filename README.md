@@ -1,15 +1,15 @@
-# 🚀 Welcome to your new awesome project!
+## POC react app + typescript + scss
 
-This project has been created using **webpack-cli**, you can now run
+### How to start
 
-```
-npm run build
-```
-
-or
+to start the backend watch server:
 
 ```
-yarn build
+npm run serve
 ```
 
-to bundle your application
+to start front-end webpack watch:
+
+```
+npm run watch
+```
